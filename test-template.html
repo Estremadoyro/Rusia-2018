@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabajo</title>
+	<link rel="shortcut icon" href="icon.ico" type="image/icon">
+<style>
+body{ 
+	margin:0px; 
+	background:#326295; 
+	height: 100%;
+}
+*{
+	font-family: Verdana
+}
+
+div#topbar > #sections_btn_holder{
+	float:left;
+	height:144px;
+	width :80px;
+
+}
+
+div#topbar > #sections_panel{
+	position:absolute;
+	width :0px;
+	height:200px;
+	background:#eee;
+	top:28px;
+	left:300px;
+	border-radius:0px 0px 8px 8px;
+	overflow:hidden;
+	z-index:10000;
+	transition: width  0.6s linear 0s;
+	border-radius: 25px;
+}
+div#topbar > #sections_panel > div{
+	background:#eee;
+	padding:20px;
+	width :950px;
+	margin: 10px;
+	
+
+}
+div#topbar > #sections_panel2{
+	position:absolute;
+	width :0px;
+	height:200px;
+	background:#eee;
+	top:282px;
+	left:300px;
+	border-radius:0px 0px 8px 8px;
+	overflow:hidden;
+	z-index:10000;
+	transition: width  0.6s linear 0s;
+	border-radius: 25px;
+}
+div#topbar > #sections_panel2 > div{
+	background:#eee;
+	padding:20px;
+	width :238px;
+	margin: 10px;
+	border-radius: 25px;
+
+
+}
+div#topbar > #sections_panel3{
+	position:absolute;
+	width :0px;
+	height:200px;
+	background:#eee;
+	top:545px;
+	left:300px;
+	border-radius:0px 0px 8px 8px;
+	overflow:hidden;
+	z-index:10000;
+	transition: width  0.6s linear 0s;
+	border-radius: 25px;
+}
+div#topbar > #sections_panel3 > div{
+	background:#eee;
+	padding:20px;
+	width :238px;
+	margin: 10px;
+
+}
+.flag{
+	width : 80%;
+	height: 50%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+	margin-top: 20%;
+	margin-right: 20%;
+	cursor: pointer;
+}
+#country-container{
+	background: #eee;
+	width : 400%;
+	margin-top: 28px;
+	margin-left: 13px;
+	border-radius: 25px;
+}
+
+
+.players{
+	height: 100%;
+	width : 100%;
+	margin: 0;
+	display: block;
+
+}
+.nombre {
+	text-align: center;
+	font-family: Verdana;
+	color:#000;
+}
+
+.pos{
+	text-align: center;
+	font-family: Verdana;
+	color: #000;
+}
+.tg{
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+th, td{
+	width: 100px;
+}
+
+.cty-name {
+	left: 20px;
+	bottom: 20px;
+	color: #000;
+	margin: 0px;
+	text-align: center;
+	font-size: 2em;
+
+
+</style>
+<script>
+function toggleNavPanel(x){
+    var panel = document.getElementById(x), maxW="1300px";
+    if(panel.style.width  == maxW){
+        panel.style.width  = "0px";
+        //navarrow.innerHTML = "&#9662;";
+    } else {
+        panel.style.width  = maxW;
+        //navarrow.innerHTML = "&#9652;";
+    }
+}
+function toggleNavPanel2(y){
+    var panel2 = document.getElementById(y), maxW="1300px";
+    if(panel2.style.width  == maxW){
+        panel2.style.width  = "0px";
+        //navarrow.innerHTML = "&#9662;";
+    } else {
+        panel2.style.width  = maxW;
+        //navarrow.innerHTML = "&#9652;";
+    }
+}
+function toggleNavPanel3(z){
+    var panel3 = document.getElementById(z), maxW="1300px";
+    if(panel3.style.width  == maxW){
+        panel3.style.width  = "0px";
+        //navarrow.innerHTML = "&#9662;";
+    } else {
+        panel3.style.width  = maxW;
+        //navarrow.innerHTML = "&#9652;";
+    }
+}
+</script>
+</head>
+<body>
+<div id="topbar">
+  <!--- <div id="logo">LOGO</div> -->
+  <div id="sections_btn_holder">
+  	<div id="country-container">
+ 
+  		
+    		<img src ="per.png" class = "flag" onclick="toggleNavPanel('sections_panel')">
+    		<p class="cty-name">Perú</p>
+    <!--- <span id="navarrow">&#9662;</span></img> -->
+   
+   
+    			<img src="fr.png" class= "flag" onclick="toggleNavPanel2('sections_panel2')">
+    		<p class="cty-name">Francia</p>
+    
+    			<img src="den.png" class="flag" onclick="toggleNavPanel3('sections_panel3')">
+    		<p class="cty-name">Dinamarca</p>
+	</div>
+  </div>
+  <div id="sections_panel">
+    <div>
+<table class="tg" width="950px" border="2px">
+  <tr>
+  	<td><img class="players" src="Jugadores/pe/0_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/1_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/2_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/3_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/4_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/5_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/6_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/7_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/8_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/9_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/10_pe.png"></td>
+    <td><img class="players" src="Jugadores/pe/dt_pe.png"></td>
+  </tr>
+  <tr class="nombre">
+    <td>Gallese</td>
+    <td>Rodriguez</td>
+    <td>Ramos</td>
+    <td>Trauco</td>
+    <td>Advíncula</td>
+    <td>Cueva</td>
+    <td>Tapia</td>
+    <td>Yotún</td>
+    <td>Farfán</td>
+    <td>Flores</td>
+    <td>Guerrero</td>
+    <td>Gareca</td>
+  </tr>
+  <tr class="nombre">
+    <td>GLK</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>DT</td>
+  </tr>
+</table>
+    </div>
+   </div>
+   <div id="sections_panel2">
+    <div>
+<table class="tg"  width="950px" border="2px">
+  <tr>
+  	<td><img class="players" src="Jugadores/fr/0_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/1_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/2_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/3_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/4_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/5_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/6_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/9_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/8_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/7_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/10_fr.png"></td>
+    <td><img class="players" src="Jugadores/fr/dt_fr.png"></td>
+  </tr>
+  <tr class="nombre">
+    <td>Lloris</td>
+    <td>Pavard</td>
+    <td>Varane</td>
+    <td>Umtiti</td>
+    <td>Hernandez</td>
+    <td>Kante</td>
+    <td>Pogba</td>
+    <td>Matuidi</td>
+    <td>Griezmann</td>
+    <td>Mbappe</td>
+    <td>Giroud</td>
+    <td>Deschamps</td>
+  </tr>
+  <tr class="pos">
+    <td>GLK</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>DT</td>
+  </tr>
+</table>
+
+    </div>
+   </div>
+   <div id="sections_panel3">
+    <div>
+<table class="tg" width="800px" border="2px">
+  <tr>
+  	<td><img class="players" src="Jugadores/den/0_den.png"></td>
+    <td><img class="players" src="Jugadores/den/1_den.png"></td>
+    <td><img class="players" src="Jugadores/den/2_den.png"></td>
+    <td><img class="players" src="Jugadores/den/3_den.png"></td>
+    <td><img class="players" src="Jugadores/den/4_den.png"></td>
+    <td><img class="players" src="Jugadores/den/5_den.png"></td>
+    <td><img class="players" src="Jugadores/den/6_den.png"></td>
+    <td><img class="players" src="Jugadores/den/9_den.png"></td>
+    <td><img class="players" src="Jugadores/den/8_den.png"></td>
+    <td><img class="players" src="Jugadores/den/7_den.png"></td>
+    <td><img class="players" src="Jugadores/den/10_den.png"></td>
+    <td><img class="players" src="Jugadores/den/dt_den.png"></td>
+  </tr>
+  <tr class="nombre">
+    <td>SCHMEICHEl</td>
+    <td>JØRGENSEN</td>
+    <td>KJÆR</td>
+    <td>DALSGAARD</td>
+    <td>KNUDSEN</td>
+    <td>POULSEN</td>
+    <td>CHRISTENSEN</td>
+    <td>DELANEY</td>
+    <td>BRAITHWAITE</td>
+    <td>ERIKSEN</td>
+    <td>CORNELIUS</td>
+    <td>HAREIDE</td>
+  </tr>
+  <tr class="pos">
+    <td>GLK</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>DEF</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>MID</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>FOR</td>
+    <td>DT</td>
+  </tr>
+</table>
+
+    </div>
+  </div>
+</div>
+</body>  
+</html>
